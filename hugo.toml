@@ -234,35 +234,6 @@ theme = "DoIt"
     # "assets/data/cdn/"
     data = ""
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
-    weight = 2
-  [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
-    weight = 3
-
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting
@@ -291,3 +262,63 @@ theme = "DoIt"
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
+
+# Author config
+[author]
+  name = "LayneZhao"
+  email = "758217673yj@gmail.com"
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  # DoIt CHANGED | 0.2.0
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+
+
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
